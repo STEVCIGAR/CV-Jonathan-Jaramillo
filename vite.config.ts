@@ -6,10 +6,11 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+  base: '/CV-Jonathan-Jaramillo/', // si es para GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'), // <-- Este es clave
+      '@': path.resolve(__dirname, 'src'),
     },
   },
 })
